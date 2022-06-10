@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import Link from "next/link";
 import Header from "../components/Header";
-import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
 
@@ -45,7 +44,8 @@ export default function Home() {
       </div>
       <div
         className="mt-40 mob:mt-10 laptop:mt-40 mob:p-2 laptop:p-0"
-        ref={workRef}>
+        ref={workRef}
+      >
         <h1 className="text-2xl text-bold">Work.</h1>
         <div className="mt-10 mob:mt-5 laptop:mt-10 grid grid-cols-2 mob:grid-cols-1 laptop:grid-cols-2 gap-4">
           {data.projects.map((project, index) => (
@@ -59,21 +59,10 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="mt-40 mob:mt-2 laptop:mt-40 mob:p-2 laptop:p-0">
-        <h1 className="text-2xl text-bold">Services.</h1>
-        <div className="mt-10 grid grid-cols-2 mob:grid-cols-1 laptop:grid-cols-2 gap-6">
-          {data.services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              name={service.title}
-              description={service.description}
-            />
-          ))}
-        </div>
-      </div>
       <div
         className="mt-40 mob:mt-2 laptop:mt-40 mob:p-2 laptop:p-0"
-        ref={aboutRef}>
+        ref={aboutRef}
+      >
         <h1 className="text-2xl text-bold">About.</h1>
         <p className="m-5 mob:m-0 laptop:m-5 mob:mt-2 laptop:ml-0 ml-0 text-3xl mob:text-xl laptop:text-3xl w-3/5 mob:w-full laptop:w-3/5">
           {data.aboutpara}
@@ -85,12 +74,6 @@ export default function Home() {
           <Socials />
         </div>
       </div>
-      <h1 className="text-sm text-bold mt-10 mob:mt-2 laptop:mt-10 mob:p-2 laptop:p-0">
-        Made With ❤ by{" "}
-        <Link href="http://www.chetanverma.com">
-          <a className="underline underline-offset-1">Chetan Verma</a>
-        </Link>
-      </h1>
     </div>
   );
 }

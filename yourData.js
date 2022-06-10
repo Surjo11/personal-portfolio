@@ -87,31 +87,6 @@ export default {
 
   // End Work Section -----------------------
 
-  // Services Section ---------------
-
-  services: [
-    {
-      title: "Art Direction",
-      description:
-        "We help with the creation and development of online advertising ideas, with particular focus on their visual appearance.",
-    },
-    {
-      title: "Branding",
-      description:
-        "We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors.",
-    },
-    {
-      title: "Web Design",
-      description:
-        "We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel.",
-    },
-    {
-      title: "3D Design",
-      description:
-        "We combine creative design and technical skills to build striking 3D visualisations that bring your project to life.",
-    },
-  ],
-
   // End Services Section --------------------------
 
   // About Secton --------------
