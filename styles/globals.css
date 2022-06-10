@@ -6,3 +6,24 @@
 * {
   font-family: "Hind";
 }
+
+.header-image {
+  width: 150px;
+  border-radius: 50%;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}

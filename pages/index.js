@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import Link from "next/link";
 import Header from "../components/Header";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
@@ -37,10 +36,15 @@ export default function Home() {
       />
       <div className="laptop:mt-20 mob:mt-10">
         <h1 className="mt-5 text-8xl mob:text-3xl laptop:text-8xl mob:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5">
-          {data.headerTaglineOne} <br />
+          <div className="header">
+            {data.headerTaglineOne}
+            <img className="header-image" src={data.headerImage} alt="" />
+          </div>
           {data.headerTaglineTwo}
         </h1>
-        <Socials className="mt-5 mob:mt-2 laptop:mt-5" />
+        <div className="mt-5 mob:mt-5 laptop:mt-5 mob:p-2 laptop:p-0">
+          <Socials />
+        </div>
       </div>
       <div
         className="mt-40 mob:mt-10 laptop:mt-40 mob:p-2 laptop:p-0"
@@ -67,12 +71,6 @@ export default function Home() {
         <p className="m-5 mob:m-0 laptop:m-5 mob:mt-2 laptop:ml-0 ml-0 text-3xl mob:text-xl laptop:text-3xl w-3/5 mob:w-full laptop:w-3/5">
           {data.aboutpara}
         </p>
-      </div>
-      <div className="mt-40 mob:mt-5 laptop:mt-40 mob:p-2 laptop:p-0">
-        <h1 className="text-2xl text-bold">Contact.</h1>
-        <div className="mt-5">
-          <Socials />
-        </div>
       </div>
     </div>
   );

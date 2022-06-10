@@ -4,15 +4,27 @@ export default {
 
   //   Header Details ---------------------
   name: "Abdullah Safayet",
-  headerTaglineOne: "Hello 👋",
+  headerTaglineOne: "Hello",
+  headerImage: "https://i.postimg.cc/5ypgJsX0/20200809-040719.jpg",
   headerTaglineTwo: "I'm Abdullah Al Safayet Front-End Developer",
 
   socials: [
-    { title: "Github", link: "https://github.com/chetanverma16" },
-    { title: "LinkedIn", link: "https://www.linkedin.com/in/chetanverma7/" },
-    { title: "Twitter", link: "https://twitter.com/realchetanverma" },
-    { title: "Blog", link: "https://blog.chetanverma.com/" },
-    { title: "Email", link: "mailto:hello@chetanverma.com" },
+    {
+      icon: "https://svgshare.com/i/iDZ.svg",
+      link: "https://github.com/Surjo11",
+    },
+    {
+      icon: "https://svgshare.com/i/iDL.svg",
+      link: "https://www.linkedin.com/in/abdullah-al-safayet-0a0628224/",
+    },
+    {
+      icon: "https://svgshare.com/i/iCJ.svg",
+      link: "https://twitter.com/aa_safayet",
+    },
+    {
+      icon: "https://svgshare.com/i/iDe.svg",
+      link: "mailto:abdullah.safayet@gmail.com",
+    },
   ],
 
   // End Header Details -----------------------
