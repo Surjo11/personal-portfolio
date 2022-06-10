@@ -3,10 +3,9 @@ export default {
   //Change The Website Template
 
   //   Header Details ---------------------
-  name: "chetan",
+  name: "Abdullah Safayet",
   headerTaglineOne: "Hello 👋",
-  headerTaglineTwo:
-    "I'm Chetan Verma - curious designer and devloper based in New Delhi, India. ",
+  headerTaglineTwo: "I'm Abdullah Al Safayet Front-End Developer",
 
   socials: [
     { title: "Github", link: "https://github.com/chetanverma16" },
