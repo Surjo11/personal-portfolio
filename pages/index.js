@@ -34,17 +34,41 @@ export default function Home() {
         handleWorkScroll={handleWorkScroll}
         handleAboutScroll={handleAboutScroll}
       />
-      <div className="laptop:mt-20 mob:mt-10">
-        <h1 className="mt-5 text-8xl mob:text-3xl laptop:text-8xl mob:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5">
+      <div className="laptop:mt-20 laptop:mb-3 mob:mt-10 mob:mb-3">
+        <h1 className="mt-5 text-8xl mob:text-3xl laptop:text-8xl mob:pr-10 text-bold w-4/5 mob:w-full laptop:w-4/5">
           <div className="header">
             {data.headerTaglineOne}
             <img className="header-image" src={data.headerImage} alt="" />
           </div>
           {data.headerTaglineTwo}
         </h1>
-        <div className="mt-5 mob:mt-5 laptop:mt-5 mob:p-2 laptop:p-0">
-          <Socials />
-        </div>
+      </div>
+      {/* resume button start */}
+      <div className="center">
+        <a href="https://drive.google.com/file/d/1aO8nyjhuI5rG3UZUj34eIPl948WnoXs8/view?usp=sharing">
+          <button className="btn">
+            <svg
+              width="180px"
+              height="60px"
+              viewBox="0 0 180 60"
+              className="border"
+            >
+              <polyline
+                points="179,1 179,59 1,59 1,1 179,1"
+                className="bg-line"
+              />
+              <polyline
+                points="179,1 179,59 1,59 1,1 179,1"
+                className="hl-line"
+              />
+            </svg>
+            <span>Download Resume</span>
+          </button>
+        </a>
+      </div>
+      {/* resume button end */}
+      <div className="mt-16 mob:mt-20 laptop:mt-20 mob:p-2 laptop:p-0">
+        <Socials />
       </div>
       <div
         className="mt-40 mob:mt-10 laptop:mt-40 mob:p-2 laptop:p-0"
