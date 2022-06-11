@@ -77,8 +77,10 @@ export default function Home() {
         className="mt-28 mob:mt-10 laptop:mt-28 mob:p-2 laptop:p-0"
         ref={workRef}
       >
-        <h1 className="mob:text-2xl laptop:text-5xl text-bold pl-2">Project.</h1>
-        <div className="mt-10 mob:mt-5 laptop:mt-10 grid grid-cols-2 mob:grid-cols-1 laptop:grid-cols-2 gap-4">
+        <h1 className="mob:text-2xl laptop:text-5xl text-bold pl-2">
+          Project.
+        </h1>
+        <div className="mt-10 mob:mt-5 laptop:mt-10 grid grid-cols-2 mob:grid-cols-1 laptop:grid-cols-3 gap-4">
           {data.projects.map((project, index) => (
             <WorkCard
               key={index}
