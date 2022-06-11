@@ -1,6 +1,10 @@
 import React from "react";
 import Button from "../Button";
-const Header = ({ handleWorkScroll, handleAboutScroll }) => {
+const Header = ({
+  handleWorkScroll,
+  handleAboutScroll,
+  handleContactScroll,
+}) => {
   return (
     <div className="mt-6 flex items-center justify-between sticky top-0 z-10 bg-white">
       <img
@@ -12,11 +16,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
         <Button onClick={handleWorkScroll}>Project</Button>
         <Button onClick={handleAboutScroll}>About</Button>
         <Button>Blog</Button>
-        <Button
-          onClick={() => window.open("mailto:abdullah.safayet11@gmail.com")}
-        >
-          Contact
-        </Button>
+        <Button onClick={handleContactScroll}>Contact</Button>
       </div>
     </div>
   );
