@@ -9,7 +9,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
         alt=""
       />
       <div>
-        <Button onClick={handleWorkScroll}>Work</Button>
+        <Button onClick={handleWorkScroll}>Project</Button>
         <Button onClick={handleAboutScroll}>About</Button>
         <Button>Blog</Button>
         <Button

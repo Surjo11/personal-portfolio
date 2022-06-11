@@ -68,7 +68,6 @@ svg {
 
 .btn:hover svg {
   stroke-dashoffset: -480;
-  background: red;
 }
 
 .btn span {
@@ -119,7 +118,6 @@ svg {
 
   .btn:hover svg {
     stroke-dashoffset: -480;
-    background: red;
   }
 
   .btn span {
