@@ -34,25 +34,28 @@ export default function Home() {
         handleWorkScroll={handleWorkScroll}
         handleAboutScroll={handleAboutScroll}
       />
-      <div className="laptop:mt-20 laptop:mb-3 mob:mt-10 mob:mb-3">
+      <div className="laptop:mt-20 laptop:mb-3 laptop:pl-0 mob:mt-10 mob:mb-3 mob:pl-3">
         <h1 className="mt-5 text-8xl mob:text-3xl laptop:text-8xl mob:pr-10 text-bold w-4/5 mob:w-full laptop:w-4/5">
           <div className="header">
             {data.headerTaglineOne}
-            <img className="header-image" src={data.headerImage} alt="" />
+            <img
+              className="header-image mob:w-16 laptop:w-36"
+              src={data.headerImage}
+              alt="my-image"
+            />
           </div>
           {data.headerTaglineTwo}
         </h1>
       </div>
       {/* resume button start */}
       <div className="center">
-        <a href="https://drive.google.com/file/d/1aO8nyjhuI5rG3UZUj34eIPl948WnoXs8/view?usp=sharing">
+        <a
+          href="https://drive.google.com/file/d/1aO8nyjhuI5rG3UZUj34eIPl948WnoXs8/view?usp=sharing"
+          rel="noreferrer"
+          target="_blank"
+        >
           <button className="btn">
-            <svg
-              width="180px"
-              height="60px"
-              viewBox="0 0 180 60"
-              className="border"
-            >
+            <svg viewBox="0 0 180 60" className="border">
               <polyline
                 points="179,1 179,59 1,59 1,1 179,1"
                 className="bg-line"
@@ -67,7 +70,7 @@ export default function Home() {
         </a>
       </div>
       {/* resume button end */}
-      <div className="mt-16 mob:mt-20 laptop:mt-20 mob:p-2 laptop:p-0">
+      <div className="laptop:mt-20 mob:p-2 laptop:p-0">
         <Socials />
       </div>
       <div
@@ -87,7 +90,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div
+      {/* <div
         className="mt-40 mob:mt-2 laptop:mt-40 mob:p-2 laptop:p-0"
         ref={aboutRef}
       >
@@ -95,7 +98,7 @@ export default function Home() {
         <p className="m-5 mob:m-0 laptop:m-5 mob:mt-2 laptop:ml-0 ml-0 text-3xl mob:text-xl laptop:text-3xl w-3/5 mob:w-full laptop:w-3/5">
           {data.aboutpara}
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

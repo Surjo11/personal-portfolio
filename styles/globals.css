@@ -8,7 +8,6 @@
 }
 
 .header-image {
-  width: 150px;
   border-radius: 50%;
   animation: bounce 1s infinite alternate;
 }
@@ -46,6 +45,11 @@
   transition: 1s ease-in-out;
 }
 
+.border {
+  width: 180px;
+  height: 60px;
+}
+
 svg {
   position: absolute;
   left: 0;
@@ -64,6 +68,7 @@ svg {
 
 .btn:hover svg {
   stroke-dashoffset: -480;
+  background: red;
 }
 
 .btn span {
@@ -72,3 +77,55 @@ svg {
   font-weight: 100;
 }
 /* resume button end */
+
+/* mobile responsive */
+@media only screen and (max-width: 480px) {
+  /* resume button start */
+  .center {
+    width: 150px;
+    height: 50px;
+    position: relative;
+  }
+
+  .btn {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid;
+    outline: none;
+    transition: 1s ease-in-out;
+    margin-left: 13px;
+  }
+  .border {
+    width: 150px;
+    height: 50px;
+  }
+  svg {
+    position: absolute;
+    left: 13px;
+    top: 0;
+    fill: none;
+    stroke: #000000;
+    stroke-dasharray: 100 480;
+    stroke-dashoffset: 100;
+    transition: 1s ease-in-out;
+  }
+
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: transparent;
+  }
+
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+    background: red;
+  }
+
+  .btn span {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  /* resume button end */
+}
