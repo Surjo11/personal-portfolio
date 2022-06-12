@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Header from "../components/Header";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
+import emailjs from "@emailjs/browser";
 
 // Local Data
 import data from "../yourData";
@@ -11,6 +12,9 @@ export default function Home() {
   const workRef = useRef();
   const aboutRef = useRef();
   const contactRef = useRef();
+  // const nameRef = useRef("");
+  // const emailRef = useRef("");
+  // const messageRef = useRef("");
 
   // Handling Scroll
   const handleWorkScroll = () => {
@@ -36,6 +40,23 @@ export default function Home() {
     });
   };
 
+  const handelSubmit = (e) => {
+    e.preventDefault();
+    console.log(e);
+    // const name = nameRef.current.value;
+    // // console.log(name);
+    // const email = emailRef.current.value;
+    // // console.log(email);
+    // const message = messageRef.current.value;
+    // // console.log(message);
+    emailjs.sendForm(
+      "service_v7y5z3a",
+      "template_8e5csda",
+      e.target,
+      "UVffs7m_eqNjxDqhb"
+    );
+    e.target.reset();
+  };
   return (
     <div className="container mx-auto mb-10">
       <Header
@@ -114,18 +135,6 @@ export default function Home() {
             </p>
             <div className="space-y-4">
               <p className="flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-5 h-5 mr-2 mob:mr-6"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
                 <span>Shantahar,Bogura</span>
               </p>
               <p className="flex items-center">
@@ -153,11 +162,17 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <form className="flex flex-col py-6 space-y-6 laptop:py-0 laptop:px-6 ng-untouched ng-pristine ng-valid">
+          {/* Contact Form Start */}
+          <form
+            onSubmit={handelSubmit}
+            className="flex flex-col py-6 space-y-6 laptop:py-0 laptop:px-6"
+          >
             <label className="block">
               <span className="mb-1">Full name</span>
               <input
                 type="text"
+                name="name"
+                // ref={nameRef}
                 placeholder="Abdullah Al Safayet"
                 className="block w-full rounded-md shadow-sm focus:ring-opacity-75 focus:ring-gray-800"
               />
@@ -166,6 +181,8 @@ export default function Home() {
               <span className="mb-1">Email address</span>
               <input
                 type="email"
+                name="userEmail"
+                // ref={emailRef}
                 placeholder="abdullah.safayet@gmail.com"
                 className="block w-full rounded-md shadow-sm focus:ring-opacity-75 focus:ring-gray-800"
               />
@@ -173,12 +190,15 @@ export default function Home() {
             <label className="block">
               <span className="mb-1">Message</span>
               <textarea
+                name="message"
+                // ref={messageRef}
                 rows="3"
                 className="block w-full rounded-md shadow-sm focus:ring-opacity-75 focus:ring-gray-800"
               ></textarea>
             </label>
             <button
-              type="button"
+              type="submit"
+              value="send"
               className="self-center px-8 py-3 text-lg rounded bg-transplant border text-gray-900 hover:ring-gray-600"
             >
               Submit
