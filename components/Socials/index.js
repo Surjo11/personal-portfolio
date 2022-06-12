@@ -9,7 +9,7 @@ const Socials = ({ className }) => {
       {yourData.socials.map((social, index) => (
         <Button key={index} onClick={() => window.open(social.link)}>
           <img
-            className="mob:w-7 mob:h-7 laptop:w-10 laptop:h-10"
+            className="w-8 h-8 mob:w-7 mob:h-7 laptop:w-10 laptop:h-10"
             src={social.icon}
             alt=""
           />

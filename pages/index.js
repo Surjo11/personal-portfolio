@@ -43,12 +43,12 @@ export default function Home() {
         handleAboutScroll={handleAboutScroll}
         handleContactScroll={handleContactScroll}
       />
-      <div className="laptop:mt-20 laptop:mb-3 laptop:pl-0 mob:mt-10 mob:mb-3 mob:pl-3">
-        <h1 className="mt-5 text-8xl mob:text-3xl laptop:text-8xl mob:pr-10 text-bold w-4/5 mob:w-full laptop:w-4/5">
+      <div className="laptop:mt-20 laptop:mb-3 laptop:pl-0 mob:mt-10 mob:mb-3 mob:pl-3 mt-10 mb-3 pl-3">
+        <h1 className="mt-5 text-3xl mob:text-3xl laptop:text-8xl mob:pr-10 text-bold w-4/5 mob:w-full laptop:w-4/5">
           <div className="header">
             {data.headerTaglineOne}
             <img
-              className="header-image mob:w-16 laptop:w-36"
+              className="header-image w-20 mob:w-20 laptop:w-36"
               src={data.headerImage}
               alt="my-image"
             />
@@ -79,17 +79,17 @@ export default function Home() {
         </a>
       </div>
       {/* resume button end */}
-      <div className="laptop:mt-20 mob:p-2 laptop:p-0">
+      <div className="laptop:mt-20 mt-2 pl-2 mob:p-2 laptop:p-0">
         <Socials />
       </div>
       <div
-        className="mt-28 mob:mt-10 laptop:mt-28 mob:p-2 laptop:p-0"
+        className="mt-10 mob:mt-10 laptop:mt-28 mob:p-2 laptop:p-0"
         ref={workRef}
       >
         <h1 className="mob:text-2xl laptop:text-5xl text-bold pl-2">
           Project.
         </h1>
-        <div className="mt-10 mob:mt-5 laptop:mt-10 grid grid-cols-2 mob:grid-cols-1 laptop:grid-cols-3 gap-4">
+        <div className="mt-10 mob:mt-5 laptop:mt-10 grid grid-cols-1 mob:grid-cols-1 laptop:grid-cols-3 gap-4">
           {data.projects.map((project, index) => (
             <WorkCard
               key={index}
@@ -103,7 +103,7 @@ export default function Home() {
       </div>
       {/* Contact me Start */}
       <section
-        className="mt-28 mob:mt-10 laptop:mt-28 mob:p-2 laptop:p-0 py-6 dark:bg-gray-800 dark:text-gray-50"
+        className="mt-28 mob:mt-10 laptop:mt-28 mob:p-2 laptop:p-0 py-6"
         ref={contactRef}
       >
         <div className="mt-10 mob:mt-5 laptop:mt-10 grid max-w-6xl grid-cols-1 px-6 mx-auto laptop:px-8 laptop:grid-cols-2 laptop:divide-x">
