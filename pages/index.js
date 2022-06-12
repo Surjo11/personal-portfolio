@@ -167,18 +167,29 @@ export default function Home() {
             </form>
           </div>
         </section>
-        {/* <div
-        className="mt-40 mob:mt-2 laptop:mt-40 mob:p-2 laptop:p-0"
-        ref={aboutRef}
-      >
-        <h1 className="text-2xl text-bold">About.</h1>
-        <p className="m-5 mob:m-0 laptop:m-5 mob:mt-2 laptop:ml-0 ml-0 text-3xl mob:text-xl laptop:text-3xl w-3/5 mob:w-full laptop:w-3/5">
-          {data.aboutpara}
-        </p>
-      </div> */}
+        <div
+          className="mt-40 mob:mt-2 laptop:mt-28 mob:p-2 laptop:p-0"
+          ref={aboutRef}
+        >
+          <h1 className="mob:text-2xl laptop:text-5xl text-bold pl-2">
+            About.
+          </h1>
+          <section>
+            <div className="container flex flex-col justify-center p-6 mx-auto laptop:flex-row laptop:justify-between laptop:items-center">
+              <p className="m-5 mob:m-0 laptop:m-5 mob:mt-2 laptop:ml-0 ml-0 text-3xl mob:text-xl laptop:text-3xl w-3/5 mob:w-full laptop:w-3/5">
+                {data.aboutpara}
+              </p>
+              <img
+                src="https://i.postimg.cc/yx1fdyJT/ID-Card-bro.png"
+                alt=""
+                className="object-contain h-72 laptop:h-[600px]"
+              />
+            </div>
+          </section>
+        </div>
       </div>
-      <footer className="bg-gray-900 pt-4 mob:pt-10 laptop:pt-5 laptop:pb-5">
-        <div className="text-white text-medium text-center py-8">
+      <footer className="bg-gray-900 pt-4 mob:pt-5 mob:pb-5 laptop:pt-5 laptop:pb-5">
+        <div className="text-white text-medium mob:text-sm laptop:text-medium text-center py-8">
           © 2022 - Present Abdullah Al Safayet. All rights reserved.
         </div>
       </footer>
