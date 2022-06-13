@@ -41,6 +41,8 @@ export default {
         "Computer Parts Manufacturer Based Website.Showing Our Stored Parts in Home Page.You can't see more than 6 Parts in Home Page.You can Order a Minimum of Parts of Quantity that we Have Mentioned.",
       technologies:
         "React,Tailwind CSS,React route,React hook form,Firebase,Daisy Ui",
+      clientUrl: "https://github.com/Surjo11/manufacturer-client-side.git",
+      serverUrl: "https://github.com/Surjo11/manufacturer-server-side.git",
       //Project Image - Add Your Project Image Here
       imageSrc: "https://i.postimg.cc/j2kq1Fsb/image.png",
       //Project URL - Add Your Project Url Here
@@ -49,6 +51,17 @@ export default {
     {
       title: "ElSol Warehouse", //Project Title - Add Your Project Title Here
       description: "Details",
+      modalImageSrcOne: "https://i.postimg.cc/PxkKRGkJ/image.png",
+      modalImageSrcTwo: "https://i.postimg.cc/Jn6DBJK8/image.png",
+      modalImageSrcThree: "https://i.postimg.cc/gjhhFjqP/image.png",
+      details:
+        "This is Warehouse based Website.It's use for Smartphone.Collecting many kind of phone from different mobile companies.There is a 5 types of different companies where we are collecting our phone (Xiaomi, Realme, Samsung, Google, Oppo).",
+      technologies:
+        "React,Tailwind CSS,React route,React hook form,Firebase,Flowbite",
+      clientUrl:
+        "https://github.com/Surjo11/warehouse-management-client-side.git",
+      serverUrl:
+        "https://github.com/Surjo11/warehouse-management-server-side.git",
       //Project Image - Add Your Project Image Here
       imageSrc: "https://i.postimg.cc/wj3tVDQJ/image.png",
       //Project URL - Add Your Project Url Here
@@ -57,6 +70,14 @@ export default {
     {
       title: "El Sol Photography", //Project Title - Add Your Project Title Here
       description: "Details",
+      modalImageSrcOne: "https://i.postimg.cc/jS0X50LX/image.png",
+      modalImageSrcTwo: "https://i.postimg.cc/kX8HwyST/image.png",
+      modalImageSrcThree: "https://i.postimg.cc/zvhxtJyy/image.png",
+      details:
+        "This is Wedding based Photography Website.Provide Services by Single person not any company or organization.Provided many Services by combo with reasonable Price tag.",
+      technologies:
+        "React,Tailwind CSS,React route,React hook form,Firebase,Flowbite",
+      clientUrl: "https://github.com/Surjo11/independent-service-provider.git",
       //Project Image - Add Your Project Image Here
       imageSrc: "https://i.postimg.cc/4NT80b8D/image.png",
       //Project URL - Add Your Project Url Here

@@ -10,6 +10,8 @@ const WorkCard = ({
   description,
   details,
   technologies,
+  clientUrl,
+  serverUrl,
   onClick,
 }) => {
   let [isOpen, setIsOpen] = useState(false);
@@ -92,19 +94,28 @@ const WorkCard = ({
                     <div className="mt-2">
                       <p className="text-medium text-gray-500">{details}</p>
                     </div>
-                    <div className="mt-2">
+                    <div className="mt-2 mb-2">
                       <span className="font-medium">Technologies:</span>
-                      <p className="text-sm text-gray-800">{technologies}</p>
+                      <p className="text-medium text-gray-500">
+                        {technologies}
+                      </p>
                     </div>
-                    {/* <div className="mt-4">
-                      <button
-                        type="button"
-                        className="absolute top-0 right-0 px-3 py-3"
-                        onClick={closeModal}
-                      >
-                        X
-                      </button>
-                    </div> */}
+                    <a
+                      className="text-blue-500 text-sm underline underline-offset-auto"
+                      href={clientUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Client Side
+                    </a>
+                    <a
+                      className="text-blue-500 text-sm underline underline-offset-auto ml-2"
+                      href={serverUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Server Side
+                    </a>
                   </Dialog.Panel>
                 </Transition.Child>
               </div>

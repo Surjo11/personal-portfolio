@@ -112,6 +112,8 @@ export default function Home() {
                 modalImgThree={project.modalImageSrcThree}
                 details={project.details}
                 technologies={project.technologies}
+                clientUrl={project.clientUrl}
+                serverUrl={project.serverUrl}
                 name={project.title}
                 description={project.description}
                 onClick={() => window.open(project.url)}
