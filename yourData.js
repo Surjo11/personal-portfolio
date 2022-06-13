@@ -34,6 +34,13 @@ export default {
     {
       title: "Bit by Bit Manufacturer", //Project Title - Add Your Project Title Here
       description: "Details",
+      modalImageSrcOne: "https://i.postimg.cc/TPMkGqfp/image.png",
+      modalImageSrcTwo: "https://i.postimg.cc/bwX02yM5/image.png",
+      modalImageSrcThree: "https://i.postimg.cc/WzkF2r21/image.png",
+      details:
+        "Computer Parts Manufacturer Based Website.Showing Our Stored Parts in Home Page.You can't see more than 6 Parts in Home Page.You can Order a Minimum of Parts of Quantity that we Have Mentioned.",
+      technologies:
+        "React,Tailwind CSS,React route,React hook form,Firebase,Daisy Ui",
       //Project Image - Add Your Project Image Here
       imageSrc: "https://i.postimg.cc/j2kq1Fsb/image.png",
       //Project URL - Add Your Project Url Here

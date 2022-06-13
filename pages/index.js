@@ -107,6 +107,11 @@ export default function Home() {
               <WorkCard
                 key={index}
                 img={project.imageSrc}
+                modalImgOne={project.modalImageSrcOne}
+                modalImgTwo={project.modalImageSrcTwo}
+                modalImgThree={project.modalImageSrcThree}
+                details={project.details}
+                technologies={project.technologies}
                 name={project.title}
                 description={project.description}
                 onClick={() => window.open(project.url)}
